@@ -1,0 +1,25 @@
+name: subtext
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  # pytorch packages
+  - pytorch
+  - torchaudio
+  - torchvision
+  - cudatoolkit=11.3  # check your CUDA version!
+  # use pip for remaining packages
+  - pip
+  - pip:
+      - blingfire
+      - matplotlib
+      - networkx
+      - numpy
+      - pandas
+      - python-Levenshtein
+      - scipy
+      - scikit-learn
+      - tqdm
+      - transformers
